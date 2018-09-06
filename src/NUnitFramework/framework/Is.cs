@@ -497,5 +497,21 @@ namespace NUnit.Framework
 
         #endregion
 
+        #region Default
+
+        /// <summary>
+        /// Returns a constraint that tests if a given item has default value
+        /// </summary>
+        /// <param name="obj">Given value</param>
+        public static DefaultConstraint Default
+        {
+            get
+            {
+                return new DefaultConstraint();                
+            }
+        }
+
+        #endregion
+
     }
 }

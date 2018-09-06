@@ -1176,5 +1176,20 @@ namespace NUnit.Framework
         #endregion
 
         #endregion
+        
+        #region Default
+
+        /// <summary>
+        /// Verifies that the object that is passed in has default value
+        /// If the object has not <code>default value</code> then an <see cref="AssertionException"/>
+        /// is thrown.
+        /// </summary>
+        /// <param name="anObject">The object that is to be tested</param>
+        public static void IsDefault(object anObject)
+        {
+            Assert.That(anObject, Is.Default, null, null);
+        }
+
+        #endregion
     }
 }
